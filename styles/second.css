@@ -1,0 +1,266 @@
+.crew {
+
+  margin-top: 115px;
+  height: 100%;
+  width: 100%;
+}
+.crew .crewheading {
+  display: inline;
+}
+.crew .crewheading h1 {
+  font-family: "Philosopher", sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 36px;
+  color: #333;
+}
+.crew .members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.crew .members .card {
+  margin: 40px;
+  background-color: rgb(237, 237, 237);
+  padding: 10px;
+  position: relative;
+  border: 12px solid rgb(95, 92, 92);
+  
+}
+.crew .members .card img {
+  height: 400px;
+  width: 280px;
+  padding: 20px;
+}
+.crew .members .card h3 {
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+.crew .members .card p {
+  padding-left: 20px;
+}
+
+.nav2 {
+  position: stickey;
+  top: 0;
+}
+
+.contact {
+  background-color: #fff;
+  margin-top:115px;
+  height: 100vh;
+  width: 100%;
+}
+.contact .contacthead {
+  font-family: "Philosopher", sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+.contact .contacthead h1 {
+  margin: 1px;
+  color: #333;
+  font-size: 36px;
+}
+.contact .contacthead p {
+  margin: 10px;
+}
+.contact .contacthead p a {
+  color: #333;
+  text-decoration: none;
+}
+.contact .contacthead p a:hover {
+  color: #000;
+}
+.contact .description {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  align-items: center;
+}
+.contact .description p {
+  display: flex;
+}
+.contact .description .btn-frm {
+  height: auto;
+  width: auto;
+  display: flex;
+  padding: 10px;
+  background: beige;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+.contact .description .btn-frm a {
+  text-decoration: none;
+  color: #333;
+}
+.contact .description .btn-frm:hover {
+  background: rgb(255, 243, 181);
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  /*
+    Contact Form
+  */
+  /*
+    Button
+  */
+}
+.form-section .form > div ~ div {
+  margin-top: 20px;
+}
+.form-section .form > div.is-hidden {
+  display: none;
+}
+.form-section .form-label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.form-section .form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font: 0.875rem/1.5 sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-section .contact-form {
+  width: 100%;
+  max-width: 568px;
+  padding: 40px;
+  background-color: #fefefe;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.125);
+  box-sizing: border-box;
+}
+.form-section .contact-form--loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.form-section .contact-form--sent > div ~ div {
+  margin: 0;
+}
+.form-section .button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 5px 10px;
+  font: 0.875rem/1.5 sans-serif;
+  background-color: #ddd;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.workhead {
+  font-family: "Philosopher", sans-serif;
+  font-size: 2.5em;
+  margin: 20px;
+  text-align: center;
+}
+
+.vids {
+  display: flex;
+  width: 100vw;
+}
+.vids iframe {
+  display: flex;
+}
+
+.quotes p {
+  font-size: 20px;
+}
+
+.ceo, .photographer, .editor, .writer, .grip {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1.5em;
+  height: 100%;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.693);
+  flex-direction: column;
+  
+
+}
+
+.nametitle {
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.card:hover {
+  scale: 1.1;
+  transition: all 0.2s ease-out;
+
+}
+
+.card:hover .ceo {
+  display: flex;
+  cursor: pointer;
+  
+  
+}
+.card:hover .photographer {
+  display: flex;
+  cursor: pointer;
+}
+.card:hover .editor {
+  display: flex;
+  cursor: pointer;
+}
+.card:hover .writer {
+  display: flex;
+  cursor: pointer;
+}
+.card:hover .grip {
+  display: flex;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .vids {
+    display: flex;
+  }
+  .vids iframe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .crew .members {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact .description {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .contact .description .btn-frm {
+    margin: 30px;
+  }
+  .prewed .vids {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .prewed .vids iframe {
+    height: 280px;
+    width: 390px;
+  }
+}/*# sourceMappingURL=second.css.map */
