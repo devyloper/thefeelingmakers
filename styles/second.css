@@ -71,14 +71,42 @@
 .contact .contacthead p a:hover {
   color: #000;
 }
+
+.contact .contacthead #whatsapp {
+  border: 1px solid green;
+  background:rgb(17, 255, 0);
+  display: flex;
+  padding: 0.5rem;
+  
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.contact .contacthead #whatsapp:hover {
+  background-color: rgb(15, 179, 3);
+  
+  transition: all 0.1s ease-out;
+}
+.contact .contacthead #whatsapp:hover a {
+  color: #fff;
+
+}
 .contact .description {
   display: flex;
   justify-content: space-around;
   margin: 50px;
   align-items: center;
+  padding: 10px;
+  overflow: hidden;
 }
 .contact .description p {
   display: flex;
+  overflow: hidden;
 }
 .contact .description .btn-frm {
   height: auto;
@@ -88,7 +116,7 @@
   background: beige;
   align-items: center;
   border: 1px solid #ccc;
-  border-radius: 7px;
+  border-radius: 0px;
 }
 .contact .description .btn-frm a {
   text-decoration: none;
