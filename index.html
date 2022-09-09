@@ -13,13 +13,18 @@
     <title>Home | The Feeling Makers</title>
 </head>
 <body>
-    
+    <div id="preloader">
+        <div class="loadimg">
+            <img src="2.png" alt="" srcset="">
+        </div>
+        <div class="loadbar"></div>
+    </div>
     <div class="nav nav-scrolled">
         <div class="navbar">
             <div class="" id="logo">
                 <a href="index.html"><img class="logoimg"  src="logo1c.png" alt=""></a>
             </div>
-    
+            
             <div class="navlinks " id="navlink">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -40,7 +45,7 @@
 
     <div class="hero">
         <div class="heroimg">
-            <img src="2.jpg" alt="">
+            <img src="heroimage.png" alt="">
             <h1 id="herotext">We are the Feeling Makers</h1>
         </div>
     </div>
@@ -58,10 +63,10 @@
         </div>
         <div class="slides">
             <div class="pics div1">
-                <img src="wedding portfolio_page-0002.jpg" alt="">
+                <a data-fslightbox="gallery" href="wedding portfolio_page-0002.jpg"> <img src="wedding portfolio_page-0002.jpg" alt=""></a>
             </div>
             <div class="pics div2">
-                <img src="wedding portfolio_page-0019.jpg" alt="">
+                <a data-fslightbox="gallery" href="wedding portfolio_page-0019.jpg"><img src="wedding portfolio_page-0019.jpg" alt=""></a>
             </div>
             <div class="pics div3">
                 <img src="wedding portfolio_page-0020.jpg" alt="">
@@ -139,6 +144,13 @@ function toggleNav() {
   togglenavigation.classList.toggle("lists");
 }
     </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+    <script src="/fslightbox-basic-3.3.1/fslightbox.js"></script>
     <script src="app.js"></script>
     
 </body>
