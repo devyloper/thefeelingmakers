@@ -23,7 +23,12 @@
 </head>
 
 <body>
-
+  <div id="preloader">
+    <div class="loadimg">
+        <img src="2.png" alt="" srcset="">
+    </div>
+    <div class="loadbar"></div>
+</div>
   <div class="nav nav-scrolled nav2">
     <div class="navbar">
       <div class="" id="logo">
@@ -53,9 +58,9 @@
    <h1 class="workhead">Pre-Wedding Shoots</h1>
 
    <div class="vids">
-    <iframe src="https://drive.google.com/file/d/1cnT8dUd47lcQTccxpPs-hUpyQo79jpkA/preview" width="640" height="480" allow="autoplay"></iframe>
-    <iframe src="https://drive.google.com/file/d/1bIxxFsNIkLS7xf6Rzlq-U59a-Km89ZpJ/preview" width="640" height="480" allow="autoplay"></iframe>
-    <iframe src="https://drive.google.com/file/d/1bInoMZq1b8Ji40yhIS61YropkP_9IHIc/preview" width="640" height="480" allow="autoplay"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uCe4Zt7ouwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uCe4Zt7ouwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uCe4Zt7ouwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
    </div>
 
@@ -66,33 +71,33 @@
     <h1 class="workhead">Wedding Shoots</h1>
     <div class="slides">
       <div class="pics div1">
-          <img src="wedding portfolio_page-0022.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0022.jpg"><img src="wedding portfolio_page-0022.jpg" alt=""></a>
       </div>
       <div class="pics div2">
-          <img src="wedding portfolio_page-0023.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0023.jpg"><img src="wedding portfolio_page-0023.jpg" alt=""></a>
       </div>
       <div class="pics div3">
-          <img src="wedding portfolio_page-0024.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0024.jpg"> <img src="wedding portfolio_page-0024.jpg" alt=""></a>
       </div>
       
       <div class="pics div4">
-          <img src="wedding portfolio_page-0025.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0025.jpg"> <img src="wedding portfolio_page-0025.jpg" alt=""></a>
       </div>
       <br>
       <div class="pics div5">
-          <img src="wedding portfolio_page-0026.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0026.jpg"> <img src="wedding portfolio_page-0026.jpg" alt=""></a>
       </div>
       <div class="pics div6">
-          <img src="wedding portfolio_page-0028.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0028.jpg">  <img src="wedding portfolio_page-0028.jpg" alt=""></a>
       </div>
       <div class="pics div7">
-          <img src="wedding portfolio_page-0050.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0050.jpg"> <img src="wedding portfolio_page-0050.jpg" alt=""></a>
       </div>
       <div class="pics div8">
-          <img src="wedding portfolio_page-0051.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0051.jpg"> <img src="wedding portfolio_page-0051.jpg" alt=""></a>
       </div>
       <div class="pics div9">
-          <img src="wedding portfolio_page-0058.jpg" alt="">
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0058.jpg"> <img src="wedding portfolio_page-0058.jpg" alt=""></a>
       </div>
   </div>
     
@@ -106,10 +111,16 @@
             
     </div>
   </div>
-  
+  <script src="/fslightbox-basic-3.3.1/fslightbox.js"></script>
   <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.8/dist/js/splide.min.js"></script>
-  
+  <script>
+    var loader = document.getElementById("preloader");
+    function screen(){
+        loader.style.display = "none";
+    }
+    const myTimeout = setTimeout(screen, 3000);
+  </script>
 
 </body>
 
