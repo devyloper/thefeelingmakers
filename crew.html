@@ -14,7 +14,12 @@
     <title>Our Crew| The Feeling Makers</title>
 </head>
 <body>
-    
+    <div id="preloader">
+        <div class="loadimg">
+            <img src="2.png" alt="" srcset="">
+        </div>
+        <div class="loadbar"></div>
+    </div>
     <div class="nav nav-scrolled nav2">
         <div class="navbar">
             <div class="" id="logo">
@@ -138,6 +143,12 @@ function toggleNav() {
 }
     </script>
     <script src="app.js"></script>
-    
+    <script>
+        var loader = document.getElementById("preloader");
+        function screen(){
+            loader.style.display = "none";
+        }
+        const myTimeout = setTimeout(screen, 3000);
+    </script>
 </body>
 </html>

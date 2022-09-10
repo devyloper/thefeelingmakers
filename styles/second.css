@@ -48,7 +48,7 @@
 .contact {
   background-color: #fff;
   margin-top:115px;
-  height: 100vh;
+  height: calc(100vh - 115px);
   width: 100%;
 }
 .contact .contacthead {
@@ -103,10 +103,13 @@
   align-items: center;
   padding: 10px;
   overflow: hidden;
+  flex-direction: column;
+  
 }
 .contact .description p {
   display: flex;
   overflow: hidden;
+  margin: 10px;
 }
 .contact .description .btn-frm {
   height: auto;
@@ -117,6 +120,7 @@
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 0px;
+  margin: 10px;
 }
 .contact .description .btn-frm a {
   text-decoration: none;
