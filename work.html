@@ -11,13 +11,53 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/scss/owl.carousel.css">
-  <!-- <link rel="stylesheet" href="/scss/owl.theme.default.css"> -->
-  <link rel="stylesheet" href="/dist/css/splide.min.css">
-  <link rel="stylesheet" href="/dist/css/themes/splide-default.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/second.css">
+  <style>
+    .swiper {
+        width: 50%;
+        height: 300px;
+        
+    }
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    .swiper-slide > iframe {
+        width: 500px;
+        height: 294px;
+    }
+    .swiper-slide > .youtube {
+        
+        height: 294px;
+        width: 500px;
+        text-align: center;
+       position: absolute;
+       transform: translateX(26%);
+    }
+    .swiper-button-prev, .swiper-button-next {
+      color:rgb(255, 182, 93);
+    }
+    @media (max-width: 768px) {
+      .swiper {
+        width: 100%;
+        height: 300px;
+        
+    }
+    .swiper-slide > .youtube {
+        
+        height: 294px;
+        width: 500px;
+        text-align: center;
+       position: absolute;
+       
+    }
+    }
+</style>
   <title>Our Work | The Feeling Makers</title>
 
 </head>
@@ -25,14 +65,14 @@
 <body>
   <div id="preloader">
     <div class="loadimg">
-        <img src="2.png" alt="" srcset="">
+      <img src="2.png" alt="" srcset="">
     </div>
     <div class="loadbar"></div>
-</div>
+  </div>
   <div class="nav nav-scrolled nav2">
     <div class="navbar">
       <div class="" id="logo">
-        <a href="index.html"><img class="logoimg"  src="logo1c.png" alt=""></a>
+        <a href="index.html"><img class="logoimg" src="logo1c.png" alt=""></a>
       </div>
 
       <div class="navlinks" id="navlink">
@@ -42,86 +82,236 @@
           <li><a href="work.html">Our Work</a></li>
           <li><a href="crew.html">Our Crew</a></li>
           <li><a href="contact.html">Contact</a></li>
-          
+
 
         </ul>
       </div>
       <div id="navtoggle" onclick="myFunction(); toggleNav();" class="ham ">
         <span class="first fr"></span>
         <span class="second sr"></span>
-    </div>
+      </div>
     </div>
   </div>
-
   <div class="prewed">
-    
-   <h1 class="workhead">Pre-Wedding Shoots</h1>
 
-   <div class="vids">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uCe4Zt7ouwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uCe4Zt7ouwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uCe4Zt7ouwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-   </div>
+    <h1 class="workhead">Wedding Films</h1>
+
+    <div class="vids">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><div class="youtube" id="uCe4Zt7ouwA" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="o417Sq6Vtys" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="siHHBJ0o6Uk" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="5YZ5QUeKTqw" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="NAGMft1Ukg0" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="O_K8Wixj5u4" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="hIPSveJ_NH4" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="EVZ50Dg0-p4" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="KsLmNhM7-hE" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="RHOlhg-6eZk" ></div></div>
+            <div class="swiper-slide"><div class="youtube" id="HPX4j9xHJDU" ></div></div>
+
+        </div>
+        <!-- If we need pagination -->
+        
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        
+    </div>
+
+    </div>
 
 
   </div>
 
-  <div class="section3">
-    <h1 class="workhead">Wedding Shoots</h1>
+
+
+  
+  <div class="section3 ">
+    <h1 class="workhead">Wedding Photographs</h1>
     <div class="slides">
       <div class="pics div1">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0022.jpg"><img src="wedding portfolio_page-0022.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0022.jpg"><img src="wedding portfolio_page-0022.jpg"
+            alt=""></a>
       </div>
       <div class="pics div2">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0023.jpg"><img src="wedding portfolio_page-0023.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0023.jpg"><img src="wedding portfolio_page-0023.jpg"
+            alt=""></a>
       </div>
       <div class="pics div3">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0024.jpg"> <img src="wedding portfolio_page-0024.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0024.jpg"> <img src="wedding portfolio_page-0024.jpg"
+            alt=""></a>
       </div>
-      
+
       <div class="pics div4">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0025.jpg"> <img src="wedding portfolio_page-0025.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0025.jpg"> <img src="wedding portfolio_page-0025.jpg"
+            alt=""></a>
       </div>
       <br>
       <div class="pics div5">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0026.jpg"> <img src="wedding portfolio_page-0026.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0026.jpg"> <img src="wedding portfolio_page-0026.jpg"
+            alt=""></a>
       </div>
       <div class="pics div6">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0028.jpg">  <img src="wedding portfolio_page-0028.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0028.jpg"> <img src="wedding portfolio_page-0028.jpg"
+            alt=""></a>
       </div>
       <div class="pics div7">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0050.jpg"> <img src="wedding portfolio_page-0050.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0050.jpg"> <img src="wedding portfolio_page-0050.jpg"
+            alt=""></a>
       </div>
       <div class="pics div8">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0051.jpg"> <img src="wedding portfolio_page-0051.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0051.jpg"> <img src="wedding portfolio_page-0051.jpg"
+            alt=""></a>
       </div>
       <div class="pics div9">
-        <a data-fslightbox="gallery" href="wedding portfolio_page-0058.jpg"> <img src="wedding portfolio_page-0058.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="wedding portfolio_page-0058.jpg"> <img src="wedding portfolio_page-0058.jpg"
+            alt=""></a>
       </div>
-  </div>
-    
-  </div>
-  <div class="footer">
-    <h3>©2022 | The Feeling Makers</h3>
-
-    <div class="icons">
-      <a href="https://facebook.com/thefeelingmakers"><i class="fa fa-facebook-square"></i></a>
-            <a href="https://instagram.com/thefeelingmakers"><i class="fa fa-instagram"></i></a>
-            
     </div>
-  </div>
-  <script src="/fslightbox-basic-3.3.1/fslightbox.js"></script>
-  <script src="app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.8/dist/js/splide.min.js"></script>
-  <script>
-    var loader = document.getElementById("preloader");
-    function screen(){
-        loader.style.display = "none";
-    }
-    const myTimeout = setTimeout(screen, 3000);
-  </script>
 
+    <div class="prewed">
+
+      <h1 class="workhead">Pre-Wedding Shoots</h1>
+  
+      <div class="vids">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><div class="youtube" id="P3pt18fI9yA" style="width:500px; height:294px; object-fit:cover;"></div></div>
+              <div class="swiper-slide"><div class="youtube" id="Z321Cvb6iCo" style="width:500px; height:294px; object-fit:cover;"></div></div>
+              <div class="swiper-slide"><div class="youtube" id="Qf7Ih9hnw_8" style="width:500px; height:294px; object-fit:cover;"></div></div>
+              <div class="swiper-slide"><div class="youtube" id="dh8JBeNaOms" style="width:500px; height:294px; object-fit:cover;"></div></div>
+              <div class="swiper-slide"><div class="youtube" id="_wZYGLg-osk" style="width:500px; height:294px; object-fit:cover;"></div></div>
+              <div class="swiper-slide"><div class="youtube" id="q0yxi7lM_Mo" style="width:500px; height:294px; object-fit:cover;"></div></div>           
+          </div>
+          <!-- If we need pagination -->
+          
+  
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+  
+          <!-- If we need scrollbar -->
+          
+      </div>
+  
+      </div>
+  
+  
+    </div>
+  
+  
+  
+  
+    
+  
+    
+    <div class="section4">
+      <h1 class="workhead">Pre-Wedding </h1>
+      <div class="slides">
+        <div class="pics div1">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0002.jpg"><img src="Pre-wedding shoot (1)_page-0002.jpg"
+              alt=""></a>
+        </div>
+        <div class="pics div2">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0003.jpg"><img src="Pre-wedding shoot (1)_page-0003.jpg"
+              alt=""></a>
+        </div>
+        <div class="pics div3">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0004.jpg"> <img
+              src="Pre-wedding shoot (1)_page-0004.jpg" alt=""></a>
+        </div>
+
+        <div class="pics div4">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0005.jpg"> <img
+              src="Pre-wedding shoot (1)_page-0005.jpg" alt=""></a>
+        </div>
+        <br>
+        <div class="pics div5">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0006.jpg"> <img
+              src="Pre-wedding shoot (1)_page-0006.jpg" alt=""></a>
+        </div>
+        <div class="pics div6">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0007.jpg"> <img
+              src="Pre-wedding shoot (1)_page-0007.jpg" alt=""></a>
+        </div>
+        <div class="pics div7">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0008.jpg"> <img
+              src="Pre-wedding shoot (1)_page-0008.jpg" alt=""></a>
+        </div>
+        <div class="pics div8">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0009.jpg"> <img
+              src="Pre-wedding shoot (1)_page-0009.jpg" alt=""></a>
+        </div>
+        <div class="pics div9">
+          <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0010.jpg"> <img
+              src="Pre-wedding shoot (1)_page-0010.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    
+
+
+  </div>
+
+
+  </div>
+      </div>
+      <div class="footer">
+        <h3>©2022 | The Feeling Makers</h3>
+
+        <div class="icons">
+          <a href="https://facebook.com/thefeelingmakers"><i class="fa fa-facebook-square"></i></a>
+          <a href="https://instagram.com/thefeelingmakers"><i class="fa fa-instagram"></i></a>
+
+        </div>
+      </div>
+      <script src="/fslightbox-basic-3.3.1/fslightbox.js"></script>
+      <script src="app.js"></script>
+      <script src="jquery.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+        var loader = document.getElementById("preloader");
+        function screen() {
+          loader.style.display = "none";
+        }
+        const myTimeout = setTimeout(screen, 3000);
+      </script>
+
+      <script type="text/javascript" src="https://codegena.com/assets/js/youtube-embed.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
 </body>
 
 </html>

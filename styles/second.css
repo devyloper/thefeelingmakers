@@ -199,14 +199,17 @@
   margin: 20px;
   text-align: center;
 }
-
-.vids {
-  display: flex;
+.youtube {
+  height: 300px;
+  width: 350px;
+ 
+}
+.prewed {
+  height: 100vh;
   width: 100vw;
+  
 }
-.vids iframe {
-  display: flex;
-}
+
 
 .quotes p {
   font-size: 20px;
@@ -264,15 +267,18 @@
   cursor: pointer;
 }
 
-
+.swiper-slide iframe {
+  
+  width: 100%;
+}
+.ytp-cued-thumbnail-overlay-image { 
+  width: 100%;
+}
 @media (max-width: 768px) {
-  .vids {
+  /* .vids {
     display: flex;
-  }
-  .vids iframe {
-    display: flex;
-    flex-direction: column;
-  }
+  } */
+  
 
   .crew .members {
     display: flex;
@@ -287,14 +293,11 @@
   .contact .description .btn-frm {
     margin: 30px;
   }
-  .prewed .vids {
+  /* .prewed .vids {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .prewed .vids iframe {
-    height: 280px;
-    width: 390px;
-  }
+  } */
+  
 }/*# sourceMappingURL=second.css.map */
