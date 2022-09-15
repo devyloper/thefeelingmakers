@@ -15,47 +15,56 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/second.css">
   <style>
-    .swiper {
-        width: 50%;
-        height: 300px;
-        
-    }
-    .swiper-wrapper {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        position: relative;
-    }
     
-    .swiper-slide > iframe {
-        width: 500px;
-        height: 294px;
-    }
-    .swiper-slide > .youtube {
-        
-        height: 294px;
-        width: 500px;
-        text-align: center;
-       position: absolute;
-       transform: translateX(26%);
-    }
+    .swiper {
+            width: 80%;
+            height: 300px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+
+            width: inherit;
+            height: auto;
+        }
+
+        .details {
+            position: absolute;
+            z-index: 1000;
+            
+            
+           width: 100%;
+           height: 76%;
+            
+            text-align: center;
+            background-color: bisque;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .details a {
+          color: #f7f7f7;
+          text-decoration: none;
+        }
+        .swiper-slide:hover .details {
+            display: flex;
+            cursor: pointer;
+
+
+        }
+    
+   
     .swiper-button-prev, .swiper-button-next {
       color:rgb(255, 182, 93);
     }
     @media (max-width: 768px) {
-      .swiper {
-        width: 100%;
-        height: 300px;
-        
-    }
-    .swiper-slide > .youtube {
-        
-        height: 294px;
-        width: 500px;
-        text-align: center;
-       position: absolute;
-       
-    }
+     
+    
     }
 </style>
   <title>Our Work | The Feeling Makers</title>
@@ -63,7 +72,7 @@
 </head>
 
 <body>
-  <div id="preloader">
+  <div id="preloader"> 
     <div class="loadimg">
       <img src="2.png" alt="" srcset="">
     </div>
@@ -96,33 +105,89 @@
 
     <h1 class="workhead">Wedding Films</h1>
 
-    <div class="vids">
+    <div >
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><div class="youtube" id="uCe4Zt7ouwA" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="o417Sq6Vtys" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="siHHBJ0o6Uk" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="5YZ5QUeKTqw" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="NAGMft1Ukg0" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="O_K8Wixj5u4" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="hIPSveJ_NH4" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="EVZ50Dg0-p4" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="KsLmNhM7-hE" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="RHOlhg-6eZk" ></div></div>
-            <div class="swiper-slide"><div class="youtube" id="HPX4j9xHJDU" ></div></div>
+            <div class="swiper-slide"><img class="swipe-img" src="Rewrite your Fairytale.jpg" alt="">
+                <div class="details">
+                    <h3>Rewrite Your Fairytale</h3>
+                    <a href="https://youtu.be/NAGMft1Ukg0">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="Lagan x Gaurav Wedding Film.jpg" alt="">
+                <div class="details">
+                    <h3>Lagan x Gaurav</h3>
+                    <a href="https://youtu.be/uCe4Zt7ouwA">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="SUKHMAN X MEHAR WEDDING FILM.jpg" alt="">
+                <div class="details">
+                    <h3>SUKHMAN X MEHAR</h3>
+                    <a href="https://youtu.be/o417Sq6Vtys">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="Kerala Christian Wedding Film TREESA  ABIN.jpg" alt="">
+                <div class="details">
+                    <h3>TREESA & ABIN</h3>
+                    <a href="https://youtu.be/siHHBJ0o6Uk">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="Hartaj & Jasleen Wedding Film.jpg" alt="">
+                <div class="details">
+                    <h3>Hartaj & Jasleen</h3>
+                    <a href="https://youtu.be/5YZ5QUeKTqw">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="Neetie & Navdeep Next Day Edit.jpg" alt="">
+                <div class="details">
+                    <h3>Neetie & Navdeep</h3>
+                    <a href="https://youtu.be/O_K8Wixj5u4">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="SANTOSH & BANU PRIYA RECEPTION.jpg" alt="">
+                <div class="details">
+                    <h3>SANTOSH & BANU PRIYA</h3>
+                    <a href="https://youtu.be/hIPSveJ_NH4">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="ASHOK & SREEJA ENGAGEMENT.jpg" alt="">
+                <div class="details">
+                    <h3>ASHOK & SREEJA</h3>
+                    <a href="https://youtu.be/EVZ50Dg0-p4">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="Urvee & Akash Wedding Film.jpg" alt="">
+                <div class="details">
+                    <h3>Urvee & Akash</h3>
+                    <a href="https://youtu.be/KsLmNhM7-hE">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="Rishabh & Neha Wedding Film.jpg" alt="">
+                <div class="details">
+                    <h3>Rishabh & Neha</h3>
+                    <a href="https://youtu.be/RHOlhg-6eZk">Tap to Play!</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="swipe-img" src="Arsal & Zehra Wedding Film.jpg" alt="">
+                <div class="details">
+                    <h3>Arsal & Zehra</h3>
+                    <a href="https://youtu.be/HPX4j9xHJDU">Tap to Play!</a>
+                </div>
+            </div>
+            
+            
 
         </div>
-        <!-- If we need pagination -->
-        
+
+
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <!-- If we need scrollbar -->
-        
+
     </div>
 
     </div>
@@ -178,19 +243,45 @@
 
     <div class="prewed">
 
-      <h1 class="workhead">Pre-Wedding Films</h1>
+      <h1 class="workhead">Pre-Wedding Shoots</h1>
   
-      <div class="vids">
+      <div >
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"><div class="youtube" id="P3pt18fI9yA" style="width:500px; height:294px; object-fit:cover;"></div></div>
-              <div class="swiper-slide"><div class="youtube" id="Z321Cvb6iCo" style="width:500px; height:294px; object-fit:cover;"></div></div>
-              <div class="swiper-slide"><div class="youtube" id="Qf7Ih9hnw_8" style="width:500px; height:294px; object-fit:cover;"></div></div>
-              <div class="swiper-slide"><div class="youtube" id="dh8JBeNaOms" style="width:500px; height:294px; object-fit:cover;"></div></div>
-              <div class="swiper-slide"><div class="youtube" id="_wZYGLg-osk" style="width:500px; height:294px; object-fit:cover;"></div></div>
-              <div class="swiper-slide"><div class="youtube" id="q0yxi7lM_Mo" style="width:500px; height:294px; object-fit:cover;"></div></div>           
+              <div class="swiper-slide"><img class="swipe-img" src="Pankaj x Sakshi Pre Wedding Jaipur.jpg" alt="">
+                <div class="details">
+                    <h3>Pankaj x Sakshi</h3>
+                    <a href="https://youtu.be/P3pt18fI9yA">Tap to Play!</a>
+                </div>
+            </div>         
+              <div class="swiper-slide"><img class="swipe-img" src="Mukul x Himani Pre Wedding Jaipur.jpg" alt="">
+                <div class="details">
+                    <h3>Mukul x Himani</h3>
+                    <a href="https://youtu.be/Z321Cvb6iCo">Tap to Play!</a>
+                </div>
+            </div>         
+              <div class="swiper-slide"><img class="swipe-img" src="PRABHJOT & ARSHDEEP SHIMLA PRE WEDDING FILM.jpg" alt="">
+                <div class="details">
+                    <h3>Prabhjot x Arshdeep</h3>
+                    <a href="https://youtu.be/Qf7Ih9hnw_8">Tap to Play!</a>
+                </div>
+            </div>         
+              <div class="swiper-slide"><img class="swipe-img" src="charul x sameer.jpg" alt="">
+                <div class="details">
+                    <h3>Charul x Sameer</h3>
+                    <a href="https://youtu.be/dh8JBeNaOms">Tap to Play!</a>
+                </div>
+            </div>         
+              <div class="swiper-slide"><img class="swipe-img" src="Prewedding Film Anuj X Richa Prewedding Film.jpg" alt="">
+                <div class="details">
+                    <h3>Anuj x Richa</h3>
+                    <a href="https://youtu.be/_wZYGLg-osk">Tap to Play!</a>
+                </div>
+            </div>         
+                     
+                       
           </div>
           <!-- If we need pagination -->
           
@@ -215,7 +306,7 @@
   
     
     <div class="section4">
-      <h1 class="workhead">Pre-Wedding Photographs</h1>
+      <h1 class="workhead">Pre-Wedding </h1>
       <div class="slides">
         <div class="pics div1">
           <a data-fslightbox="gallery" href="Pre-wedding shoot (1)_page-0002.jpg"><img src="Pre-wedding shoot (1)_page-0002.jpg"
@@ -294,11 +385,28 @@
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  slidesPerView: 3,
+  spaceBetween: 2,
+  breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            },
 
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+ 
 
   // Navigation arrows
   navigation: {
@@ -307,9 +415,7 @@
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+ 
 });
     </script>
 </body>

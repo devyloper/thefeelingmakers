@@ -9,7 +9,7 @@
 }
 
 .swiper {
-  width: 500px;
+  width: auto;
   height: 300px;
 }
 .ytp-cued-thumbnail-overlay-image { 
@@ -203,7 +203,7 @@
 }
 .nav-scrolled {
   --text: #333;
-  background: rgba(255, 243, 181, 0.5);
+  background: hsla(50, 100%, 85%, 0.502);
   transition: all 0.2s ease-out;
 }
 .nav-scrolled .logo-scrolled {
