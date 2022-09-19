@@ -29,9 +29,12 @@
   text-decoration: none;
   color: #000;
 }
-* .section3 .btn-more {
+*  .btn-more {
   display: flex;
+  position: relative;
   height: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 84px;
   justify-content: center;
   background-color: beige;
@@ -40,7 +43,7 @@
   align-items: center;
   margin: 30px;
 }
-* .section3 .btn-more:hover {
+*  .btn-more:hover {
   background-color: rgb(240, 248, 210);
 }
 * .section3 .sect3heading {
@@ -320,7 +323,9 @@
      
     padding: 1rem;
   }
-
+  * .btn-more {
+    transform: translateX(0%);
+  }
   .section2 .flowers img {
     height: 26em;
     margin: 5px;
