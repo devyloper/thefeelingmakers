@@ -131,7 +131,7 @@
 }
 * .hero .heroimg {
   height: 100vh;
-  width: max-width;
+  width: 100vw;
   position: relative;
 }
 * .hero .heroimg img {
@@ -309,7 +309,9 @@
   50%  {width: 111px;} 
   100% {width: 0px;}
 }
-
+.form-section {
+  margin-top: 115px;
+}
 
 @media (max-width: 768px) {
   .hero .heroimg h1 { 
