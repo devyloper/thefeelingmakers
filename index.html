@@ -10,7 +10,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+          width: 100vw;
+          height: 100vh;
+        }
     
+        .swiper-slide {
+          display: flex;
+          align-items: center;
+        }
+    
+        .swiper img {
+    
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+        }
+    
+        
+    
+        
+      </style>
     <title>Home | The Feeling Makers</title>
 </head>
 <body>
@@ -45,10 +67,39 @@
     </div>
 
     <div class="hero">
-        <div class="heroimg">
+        <!-- <div class="heroimg">
             <img src="heroimage.png" alt="">
             <h1 id="herotext">We are the Feeling Makers</h1>
-        </div>
+        </div> -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><div class="heroimg">
+                <img src="heroimage1.png" alt="">
+                <h1 id="herotext">We are the Feeling Makers</h1>
+            </div>
+               
+              </div>
+              <div class="swiper-slide"><div class="heroimg">
+                <img src="heroimg2.jpg" alt="">
+                <h1 id="herotext">We are the Feeling Makers</h1>
+            </div></div>
+              <div class="swiper-slide"><div class="heroimg">
+                <img src="heroimg4.jpg" alt="">
+                <h1 id="herotext">We are the Feeling Makers</h1>
+            </div></div>
+        
+            </div>
+        
+        
+        
+            <!-- If we need navigation buttons -->
+        
+        
+        
+          </div>
+        
     </div>
     <div class="section2">
             <div class="flowers">
@@ -145,7 +196,7 @@ function toggleNav() {
   togglenavigation.classList.toggle("lists");
 }
     </script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/fslightbox-basic-3.3.1/fslightbox.js"></script>
     <script src="app.js"></script>
     <script>
@@ -155,5 +206,47 @@ function toggleNav() {
         }
         const myTimeout = setTimeout(screen, 3000);
     </script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      // breakpoints: {
+      //     // when window width is >= 320px
+      //     320: {
+      //         slidesPerView: 1,
+      //         spaceBetween: 20
+      //     },
+      //     // when window width is >= 480px
+      //     480: {
+      //         slidesPerView: 2,
+      //         spaceBetween: 30
+      //     },
+      //     // when window width is >= 640px
+      //     640: {
+      //         slidesPerView: 3,
+      //         spaceBetween: 40
+      //     }
+      // },
+
+      autoplay: {
+        delay: 2000,
+      },
+
+      // If we need pagination
+
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+
+    });
+  </script>
 </body>
 </html>
