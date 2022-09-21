@@ -332,11 +332,11 @@ grid-row-gap: 0px;
 
       <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
       <script>
-        var loader = document.getElementById("preloader");
-        function screen() {
-          loader.style.display = "none";
+       var loader = document.getElementById("preloader");
+        function screen(){
+            loader.style.display = "none";
         }
-        const myTimeout = setTimeout(screen, 3000);
+        window.addEventListener("load", screen());
       </script>
 
       <script type="text/javascript" src="https://codegena.com/assets/js/youtube-embed.js"></script>
