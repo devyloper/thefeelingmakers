@@ -204,7 +204,7 @@ function toggleNav() {
         function screen(){
             loader.style.display = "none";
         }
-        const myTimeout = setTimeout(screen, 3000);
+        window.addEventListener("load", screen());
     </script>
 
 <script>
