@@ -71,11 +71,11 @@
     </div>
     <script src="app.js"></script>
     <script>
-        var loader = document.getElementById("preloader");
+       var loader = document.getElementById("preloader");
         function screen(){
             loader.style.display = "none";
         }
-        const myTimeout = setTimeout(screen, 3000);
+        window.addEventListener("load", screen());
     </script>
 </body>
 </html>
