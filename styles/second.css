@@ -1,3 +1,11 @@
+@font-face {
+font-family: "Sherlyn";
+src: url("./webfontkit/sherlyn-webfont.eot");
+src: url("../webfontkit/sherlyn-webfont.woff") format("woff"),
+url("../webfontkit/Sherlyn.otf") format("opentype"),
+url("sherlyn-webfont.svg#filename") format("svg");
+}
+
 .crew {
 
   margin-top: 115px;
